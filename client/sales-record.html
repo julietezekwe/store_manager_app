@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Store | Manager</title>
+        <script src="js/auth.js"></script>
+        <script src="js/admin.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Muli:200i,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link rel="stylesheet" href="css/modal.css">
+    </head>
+    <body>
+        <header id="header" >
+            <nav>
+                <a href="#"> <div class="logo"><i class="fab fa-stripe-s"></i>tore <i class="fab fa-medium-m"></i>anager</div></a>
+                <ul>
+            
+                    <li><a href="#" id="user"><i class="fas fa-user-lock"></i></i> </a></li>
+                    <li><a href="" onclick="logout()"><i class="fas fa-sign-in-alt"></i> Logout </a></li>
+                </ul>
+            </nav>
+        </header>
+         <div id="page" class="admin-page">
+                        
+                            <div class=" dashboard card col-2">
+                                <h3>Dashboard</h3>
+                                <p><a href="admin.html">Products</a></p>
+                                <hr>
+                                <p class="active"><a href="sales-record.html">Sales Record</a></p>
+                                <hr>
+                                <p  ><a href="attendants.html">Store Attendants</a></p>
+                              
+                            </div>
+                            <div class="col-9">
+                                <div class="col-11">
+                                        
+                                    </div>
+                                   <!-- delete sale record modal -->
+                                   
+                                    <div class="delete"  >
+                                            <div class="content">
+                                                <span class="close" onClick="toggleModalDelete()">×</span>
+                                                
+                                               
+                                                        <div class="card">                                  
+                                                            <div class="product-detail">
+                                                                <h3 style="text-align: center">Delete this sale?</h3>
+                                                               
+                                                                <p class="text-left"><a href=""><button class="button">Cancel</button></a></p> 
+                                                                <p class="text"> <a href=""><button class="button delete-btn">Delete</button></a></p> 
+                                                            </div>
+                                                        </div>
+                                                       
+                                                    
+                                            </div>
+                                        </div>
+                                        <input type="search" name="" id="" placeholder="Search Record By Username">
+                                    <div class="card col-10">
+                                           
+                                            <h2 class="table-caption" style="display: block;">Sales Record</h2>
+                                          <!-- sales record table -->
+                                          
+                                            <table class="table" id="allSales">
+                                                
+                                                    <tr>
+                                                      <th>Product Id</th>
+                                                      <th>Product Name</th>
+                                                      
+                                                      <th>Quantity</th>
+                                                      <th>Price(&#8358;)</th>
+                                                      <th>Seller</th>
+                                                      <th>Date of Sales</th>
+                                                    </tr>
+                                                   
+                                                   
+                                                  </table>
+                                    </div>
+                                  
+    
+    
+                            </div>
+                   
+         </div>
+        <footer id="footer" class="col-12">
+            <p>Copyright © 2018 Store managers Design. All rights reserved.</p>            
+        </footer>
+        <!-- <script src="js/app.js"></script> -->
+        <script src="js/modals.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/getFetch.js"></script>
+        <script src="js/allSales.js"></script>
+    </body>
+</html>

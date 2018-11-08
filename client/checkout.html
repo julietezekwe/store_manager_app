@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Store | Manager</title>
+        <script src="js/auth.js"></script>
+        <script src="js/attendant.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Muli:200i,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header" >
+            <nav>
+                <a href="#"> <div class="logo"><i class="fab fa-stripe-s"></i>tore <i class="fab fa-medium-m"></i>anager</div></a>
+                <ul>
+                   <li><a href="" onclick="logout()"><i class="fas fa-sign-in-alt"></i> Logout </a></li>
+                    <li><a href="store-attendant.html" id="user"></a></li>
+                   
+                    
+                </ul>
+            </nav>
+        </header>
+         <section class="login-page">
+         
+                    <div class="card col-9" style=" float: none; text-align: center; margin-left: auto; margin-right: auto;">
+                                           
+                      <!-- checkout table -->
+                      <div class="card col-9" id="alert"></div>
+                        <table class="table" style="width: 100%; "  id="check">
+                            
+                                <tr>
+                                  <th>S/N</th>
+                                  <th>Product Name</th>
+                                  <th>Description</th>
+                                  <th>ID</th>
+                                  <th >Quantity</th>
+                                  <th>Amount (<i class="fas fa-dollar-sign"></i>)</th>
+                                  <th>Action</th>
+                                </tr>
+                               
+                                <tfoot>
+                                        <tr>
+                                            <td colspan="3"></th>
+                                            <td>Total</td>
+                                            <td id="checkoutPrice"></td>
+        
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><a href="store-attendant.html"><button class="button">Back to shop</button></a></td>
+                                            <td></th>
+                                            <td colspan="2"><button class="button" onclick="checkout()">Checkout Now</button></td>
+                                        </tr>
+                                    </tfoot>
+                              </table>
+                </div>
+              
+         </section>
+        <footer id="footer">
+            <p>Copyright © 2018 Store managers Design. All rights reserved.</p>            
+        </footer>
+        <!-- <script src="js/app.js"></script> -->
+        <script src="js/login.js"></script>
+        <script src="js/getFetch.js"></script>
+        <script src="js/cart.js"></script>
+    </body>
+</html>

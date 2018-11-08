@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Store | Manager</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Muli:200i,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header" >
+            <nav>
+                <a href="#"> <div class="logo"><i class="fab fa-stripe-s"></i>tore <i class="fab fa-medium-m"></i>anager</div></a>
+                <ul>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="store-attendant.html">Attendant</a></li>
+                   
+                    
+                </ul>
+            </nav>
+        </header>
+         <section class="login-page">
+                
+                <div class="login-form">
+                    
+                        <h1 class="login-heading">Log In</h1>
+                        <div class="card col-9" id="alert"></div>
+                        <div class="form login">
+                                <div>
+                                    <input type="email" id="email" placeholder="Email" required>
+                                </div>
+                                <div >
+                                    <input type="password" id="password" placeholder="password" required>
+                                </div>
+                               
+                                <div>
+                                    <input type="submit" onclick="userLogin()" value="LOG IN">
+                                </div>
+                                
+                                <div class="forgotpassword">
+                                    <p><a href="#">Forgot Password?</a></p>
+                                </div>
+ 
+                        </div>
+                    </div>
+         </section>
+        <footer id="footer">
+            <p>Copyright © 2018 Store managers Design. All rights reserved.</p>            
+        </footer>
+        <script src="js/getFetch.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>
