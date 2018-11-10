@@ -1,5 +1,5 @@
 // fetch function
-const doFetch = (url, method, token = null, body = null) => (fetch(`http://localhost:8000/api/v1/${url}`, {
+const doFetch = (url, method, token = null, body = null) => (fetch(`https://store-manager-develop.herokuapp.com/api/v1/${url}`, {
   method,
   headers: {
     'Content-Type': 'application/json',
